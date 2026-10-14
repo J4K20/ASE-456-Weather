@@ -52,18 +52,7 @@ class _WeatherPageState extends State<WeatherPage> {
         'https://api.openweathermap.org/data/2.5/weather?lat=$lat&lon=$lon&appid=$ApiKey&units=imperial',
       ),
     );
-    print(res.body);
     String weatherData = res.body;
-    print(weatherData);
-
-    var weatherDesc = jsonDecode(weatherData)['weather'][0]['description'];
-    print(weatherDesc);
-    var temp = jsonDecode(weatherData)['main']['temp'];
-    print(temp);
-    var humidity = jsonDecode(weatherData)['main']['humidity'];
-    print(humidity);
-    var name = jsonDecode(weatherData)['name'];
-    print(name);
 
     return weatherData;
   }
@@ -110,7 +99,6 @@ class _WeatherPageState extends State<WeatherPage> {
 
                   ElevatedButton(
                     onPressed: () {
-                      print('back button pressed');
                       Navigator.pop(context);
                     },
                     child: Text('Back to Home'),

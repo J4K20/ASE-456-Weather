@@ -35,7 +35,6 @@ class HomePage extends StatelessWidget {
 
             ElevatedButton(
               onPressed: () {
-                print('button pressed');
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => WeatherPage()),
