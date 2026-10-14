@@ -10,4 +10,6 @@ Built using **Dart/Flutter** and **OpenWeatherMap API**
 
 2. Add a location to your emulator (if you are using one)
 
-3. Run
+3. Run 'flutter pub get' in project root
+
+4. Run
